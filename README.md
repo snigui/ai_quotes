@@ -1,3 +1,4 @@
+
 # ai_quotes
 
 Run on Google Colab: https://drive.google.com/drive/folders/1_ae1Dsca_8Wep8kEAVURXkPTyLQ_XMRE?usp=sharing
@@ -18,3 +19,5 @@ Run on Google Colab: https://drive.google.com/drive/folders/1_ae1Dsca_8Wep8kEAVU
 
 <img width="601" alt="image" src="https://user-images.githubusercontent.com/40993241/161903444-1e71dda7-c066-4760-a10f-2e0fd771ced0.png">
 
+# RNN char based text generated "motivational quotes"!
+### Using tensorflow: https://www.tensorflow.org/text/tutorials/text_generation
