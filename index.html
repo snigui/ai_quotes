@@ -1,0 +1,632 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- HTML Code from W3 schools for slideshow: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_quotes_slideshow -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+<div class="mySlides"> <h1>"people discover the age of the things in old age"</h1> </div>
+<div class="mySlides"> <h1>"a new thing and other"</h1> </div>
+<div class="mySlides"> <h1>"one day you too can have"</h1> </div>
+<div class="mySlides"> <h1>"whatever, the street of critics "</h1> </div>
+<div class="mySlides"> <h1>"beauty is being back"</h1> </div>
+<div class="mySlides"> <h1>"ever before you and so far"</h1> </div>
+<div class="mySlides"> <h1>"i've been selfless"</h1> </div>
+<div class="mySlides"> <h1>"how doge, get through the world"</h1> </div>
+<div class="mySlides"> <h1>"generalists on the other hands, officers"</h1> </div>
+<div class="mySlides"> <h1>"growth cannot when carries are not"</h1> </div>
+<div class="mySlides"> <h1>"constantly religious, if raised at any age"</h1> </div>
+<div class="mySlides"> <h1>"brothers are weights"</h1> </div>
+<div class="mySlides"> <h1>"you have this advice to have the envarory of lips"</h1> </div>
+<div class="mySlides"> <h1>"never a little credit without going into the dreams"</h1> </div>
+<div class="mySlides"> <h1>"muted to be left alone"</h1> </div>
+<div class="mySlides"> <h1>"beauty'll be everywhere"</h1> </div>
+<div class="mySlides"> <h1>"but the artist, die younger, and inhabitation not usual"</h1> </div>
+<div class="mySlides"> <h1>"faithful yourself, a will battle which alone"</h1> </div>
+<div class="mySlides"> <h1>"inspires the art of being"</h1> </div>
+<div class="mySlides"> <h1>"victorian presents knowledge, staring interests"</h1> </div>
+<div class="mySlides"> <h1>"higher art, make notice it as any outside the cents"</h1> </div>
+<div class="mySlides"> <h1>"you're not together"</h1> </div>
+<div class="mySlides"> <h1>"best."</h1> </div>
+<div class="mySlides"> <h1>"knowledge of god is succeed"</h1> </div>
+<div class="mySlides"> <h1>"i'm gold and best for situations, but am very much obsessing in space"</h1> </div>
+<div class="mySlides"> <h1>"probably likes meaning than ex and elections"</h1> </div>
+<div class="mySlides"> <h1>"you'll never just feel, each other"</h1> </div>
+<div class="mySlides"> <h1>"broadway music is being superficial as help off their own"</h1> </div>
+<div class="mySlides"> <h1>"1ccorstip could become influence on television"</h1> </div>
+<div class="mySlides"> <h1>"there is no respect, young and yeah"</h1> </div>
+<div class="mySlides"> <h1>"the 1."</h1> </div>
+<div class="mySlides"> <h1>"we tree or maybe it is alone"</h1> </div>
+<div class="mySlides"> <h1>"knowledge is essentially upon you from a great gift to something wrong! will remember being alone or in a twenty years"</h1> </div>
+<div class="mySlides"> <h1>"alas, showing people a cause, it was an obsession with the cat"</h1> </div>
+<div class="mySlides"> <h1>"as old as his mouth the change through"</h1> </div>
+<div class="mySlides"> <h1>"facts-change intensity and representation"</h1> </div>
+<div class="mySlides"> <h1>"the writer's hearts: not early and always rises, just like virtue it changes"</h1> </div>
+<div class="mySlides"> <h1>"funny and socialism, that america is never"</h1> </div>
+<div class="mySlides"> <h1>"you are alone"</h1> </div>
+<div class="mySlides"> <h1>"keep movies with that, you're to"</h1> </div>
+<div class="mySlides"> <h1>"grateful for anger is neither of beauty"</h1> </div>
+<div class="mySlides"> <h1>"discovery, both existence out, then in"</h1> </div>
+<div class="mySlides"> <h1>"kind of inspiring"</h1> </div>
+<div class="mySlides"> <h1>"being is true or any run without free"</h1> </div>
+<div class="mySlides"> <h1>"all that you're growing up"</h1> </div>
+<div class="mySlides"> <h1>"bobballaradians are sleeping, but when people believe in matter than me"</h1> </div>
+<div class="mySlides"> <h1>"you're not getting more into the very best"</h1> </div>
+<div class="mySlides"> <h1>"the anger is amazing how quickly it's seen as our answer"</h1> </div>
+<div class="mySlides"> <h1>"was an angry person"</h1> </div>
+<div class="mySlides"> <h1>"generally argunerate"</h1> </div>
+<div class="mySlides"> <h1>"the art grows as diversion of heavenly"</h1> </div>
+<div class="mySlides"> <h1>"believe driven deserts of the peace"</h1> </div>
+<div class="mySlides"> <h1>"there's over, life's done"</h1> </div>
+<div class="mySlides"> <h1>"finance of million sport situations"</h1> </div>
+<div class="mySlides"> <h1>"attitude, therefore we all want the ever of it"</h1> </div>
+<div class="mySlides"> <h1>"bright as daughter, of the pitifully few dealers"</h1> </div>
+<div class="mySlides"> <h1>"obama and only because question is not fighting"</h1> </div>
+<div class="mySlides"> <h1>"then, and age, will, writing in the paradox, sex, can dollar, it is advice to grow up"</h1> </div>
+<div class="mySlides"> <h1>"blusementhere: the needed of observations intellect"</h1> </div>
+<div class="mySlides"> <h1>"this version gives us which see the treasure of a balance of pressure and our species for both useful peeks has nothing "</h1> </div>
+<div class="mySlides"> <h1>"people interested me to accept scenes "</h1> </div>
+<div class="mySlides"> <h1>"never too beautiful and age when kids learn, maybe, which loved it"</h1> </div>
+<div class="mySlides"> <h1>"herbert is an inspiration of the surroundings"</h1> </div>
+<div class="mySlides"> <h1>"achieving trust, and loved home"</h1> </div>
+<div class="mySlides"> <h1>"an artist: your anger rather than spirit"</h1> </div>
+<div class="mySlides"> <h1>"kind of venom in us"</h1> </div>
+<div class="mySlides"> <h1>"needed to me, am"</h1> </div>
+<div class="mySlides"> <h1>"altogether, the way you'd be better"</h1> </div>
+<div class="mySlides"> <h1>"the boiling point where you say that"</h1> </div>
+<div class="mySlides"> <h1>"i'm a beautiful art -  we see, which makes us from a very young age"</h1> </div>
+<div class="mySlides"> <h1>"first youth for success, unique needs and a want - other was being helping and amazing"</h1> </div>
+<div class="mySlides"> <h1>"you get think about age, but the mal"</h1> </div>
+<div class="mySlides"> <h1>"your youngest of our souls does not know which is see: the mediates either the needs"</h1> </div>
+<div class="mySlides"> <h1>"fear is the most past confuser of best"</h1> </div>
+<div class="mySlides"> <h1>"then they're good who are extremely incompetent"</h1> </div>
+<div class="mySlides"> <h1>"the world makes us go on see, it is strong"</h1> </div>
+<div class="mySlides"> <h1>"the time in the side without strive and destroying what needed most"</h1> </div>
+<div class="mySlides"> <h1>"kind of more and more, nobody"</h1> </div>
+<div class="mySlides"> <h1>"think beyond this"</h1> </div>
+<div class="mySlides"> <h1>"have a strong attitude than in one highest"</h1> </div>
+<div class="mySlides"> <h1>"kids are already frustration"</h1> </div>
+<div class="mySlides"> <h1>"knowledge of the amazing version of beauty lives only moods"</h1> </div>
+<div class="mySlides"> <h1>"she almost carries the living "</h1> </div>
+<div class="mySlides"> <h1>"i'm not a matter of men, and if they look, gifts of truth"</h1> </div>
+<div class="mySlides"> <h1>"architecture of a friendship, in a free country"</h1> </div>
+<div class="mySlides"> <h1>"acting alone can think that can really make out how what you are"</h1> </div>
+<div class="mySlides"> <h1>"growing up on a better disease"</h1> </div>
+<div class="mySlides"> <h1>"health is a single progress upon music, so die after he falls dreaming to you"</h1> </div>
+<div class="mySlides"> <h1>"feel me as a woman's person"</h1> </div>
+<div class="mySlides"> <h1>"animal has a bit more love"</h1> </div>
+<div class="mySlides"> <h1>"your life and highest to telling me on the time of different things, and on art, like strength"</h1> </div>
+<div class="mySlides"> <h1>"part celebrities is the percent of men, and i've just paintings"</h1> </div>
+<div class="mySlides"> <h1>"in victory on one sunshine"</h1> </div>
+<div class="mySlides"> <h1>"you're in a long fable and a few that will"</h1> </div>
+<div class="mySlides"> <h1>"is no consequences on the next fear"</h1> </div>
+<div class="mySlides"> <h1>"was feeling you why chaos in order to be a fountain"</h1> </div>
+<div class="mySlides"> <h1>"beauty contests many children suppose"</h1> </div>
+<div class="mySlides"> <h1>"highest time when think we leave this attitude in a peace"</h1> </div>
+<div class="mySlides"> <h1>"you can help followed the word"</h1> </div>
+<div class="mySlides"> <h1>"was interested in your art"</h1> </div>
+<div class="mySlides"> <h1>"here's to people wouldn't really slower"</h1> </div>
+<div class="mySlides"> <h1>"learn a year of man"</h1> </div>
+<div class="mySlides"> <h1>"actresses measure art world"</h1> </div>
+<div class="mySlides"> <h1>"had something that lasts over if you can listen to your attitude"</h1> </div>
+<div class="mySlides"> <h1>"stevenson writing, or the fun its own"</h1> </div>
+<div class="mySlides"> <h1>"there's nothing but the industry of trying to visualize it"</h1> </div>
+<div class="mySlides"> <h1>"keecial, the thing that which is best to happen to have "</h1> </div>
+<div class="mySlides"> <h1>"beauty're is a big difference"</h1> </div>
+<div class="mySlides"> <h1>"love grows more transitioned by those"</h1> </div>
+<div class="mySlides"> <h1>"we find through this day and age, some pain is brought in to the poor temperance so cap a fool"</h1> </div>
+<div class="mySlides"> <h1>"find yourself with a friend"</h1> </div>
+<div class="mySlides"> <h1>"have often actions"</h1> </div>
+<div class="mySlides"> <h1>"another beauty is the first time with others, from this age"</h1> </div>
+<div class="mySlides"> <h1>"who war in the best of all"</h1> </div>
+<div class="mySlides"> <h1>"kind of groups, our peace of mind"</h1> </div>
+<div class="mySlides"> <h1>"who are nourished by the growth ring on the filmed"</h1> </div>
+<div class="mySlides"> <h1>"until the hands while they live and wristed into this greatest"</h1> </div>
+<div class="mySlides"> <h1>"groad of pencils is an attach beauty regieses from good live to question, and if any work of art"</h1> </div>
+<div class="mySlides"> <h1>"five windows can have a vibree of ideas"</h1> </div>
+<div class="mySlides"> <h1>"he sused it"</h1> </div>
+<div class="mySlides"> <h1>"habits for example, is the greatest confession, and being numbers and critics"</h1> </div>
+<div class="mySlides"> <h1>"painting is the art of wanting, politics, we get things through"</h1> </div>
+<div class="mySlides"> <h1>"generally, believe feels through the sea"</h1> </div>
+<div class="mySlides"> <h1>"kids today's standards"</h1> </div>
+<div class="mySlides"> <h1>"seeking more easily to a mean, one of makeup and interested in television, lies in society"</h1> </div>
+<div class="mySlides"> <h1>"beauty is as it imagined and truste admits the objects of masters"</h1> </div>
+<div class="mySlides"> <h1>"old age has indeception"</h1> </div>
+<div class="mySlides"> <h1>"you're doing now, keep that in"</h1> </div>
+<div class="mySlides"> <h1>"beach is a really good site of mind"</h1> </div>
+<div class="mySlides"> <h1>"the arts are today's the until immortal and not go"</h1> </div>
+<div class="mySlides"> <h1>"was in love"</h1> </div>
+<div class="mySlides"> <h1>"was destroyed in order to the creation"</h1> </div>
+<div class="mySlides"> <h1>"walk, beauty does"</h1> </div>
+<div class="mySlides"> <h1>"give, and in an art"</h1> </div>
+<div class="mySlides"> <h1>"a little highest was born, but if are thoughts, not necessary"</h1> </div>
+<div class="mySlides"> <h1>"progress and concept at the time you get"</h1> </div>
+<div class="mySlides"> <h1>"you're in concern, people than anymore, like another, no one won't go into product violence in the wall"</h1> </div>
+<div class="mySlides"> <h1>"a big place for sidencial, but do sens the mejodict of mind"</h1> </div>
+<div class="mySlides"> <h1>"whether loracle dimmers could catch a great gift"</h1> </div>
+<div class="mySlides"> <h1>"it's great architecture nosely internet"</h1> </div>
+<div class="mySlides"> <h1>"you call for youth for being able to appreciate"</h1> </div>
+<div class="mySlides"> <h1>"the years and yourself if the man whose social without weird, man in sexuality for"</h1> </div>
+<div class="mySlides"> <h1>"so heavily stayed the american speech"</h1> </div>
+<div class="mySlides"> <h1>"occurs in the face of the comfort in way into the world's painting, photographed always the young"</h1> </div>
+<div class="mySlides"> <h1>"every time unchanged, so it was a really smoked weed"</h1> </div>
+<div class="mySlides"> <h1>"brians worked on a plane-like day"</h1> </div>
+<div class="mySlides"> <h1>"kind of late 24-7"</h1> </div>
+<div class="mySlides"> <h1>"saw you at last"</h1> </div>
+<div class="mySlides"> <h1>"it especially by new special just set in"</h1> </div>
+<div class="mySlides"> <h1>"writing a new show is not about pertance if we need a faintribus dust"</h1> </div>
+<div class="mySlides"> <h1>"first important thing is like violent by other people"</h1> </div>
+<div class="mySlides"> <h1>"was most of it is her actions"</h1> </div>
+<div class="mySlides"> <h1>"and not of music survives"</h1> </div>
+<div class="mySlides"> <h1>"we are alone"</h1> </div>
+<div class="mySlides"> <h1>"acceptance, was very good for the laws of beauty to old age"</h1> </div>
+<div class="mySlides"> <h1>"nighty little work"</h1> </div>
+<div class="mySlides"> <h1>"the arms of life distrust oneself, even when my music should be enjoyed as great"</h1> </div>
+<div class="mySlides"> <h1>"can grow myself"</h1> </div>
+<div class="mySlides"> <h1>"like books like those emotions"</h1> </div>
+<div class="mySlides"> <h1>"needed are coming-for-ideations from about misuse of a worthibilities to work "</h1> </div>
+<div class="mySlides"> <h1>"being friends fined at least simplicity - not less"</h1> </div>
+<div class="mySlides"> <h1>"you have together and her truth"</h1> </div>
+<div class="mySlides"> <h1>"death as is the dream of art"</h1> </div>
+<div class="mySlides"> <h1>"giving up the age of 14, preserve my dreams"</h1> </div>
+<div class="mySlides"> <h1>"how crisp, he always has such moments"</h1> </div>
+<div class="mySlides"> <h1>"brothel was 27, he is a great beauty in england, read bl"</h1> </div>
+<div class="mySlides"> <h1>"kids travel to have amazing people to grow old"</h1> </div>
+<div class="mySlides"> <h1>"consciousness is art"</h1> </div>
+<div class="mySlides"> <h1>"act now"</h1> </div>
+<div class="mySlides"> <h1>"me as a more amazing woman"</h1> </div>
+<div class="mySlides"> <h1>"i've achieved the the day"</h1> </div>
+<div class="mySlides"> <h1>"i'm a writer leg away"</h1> </div>
+<div class="mySlides"> <h1>"the best well to provide most things to be left"</h1> </div>
+<div class="mySlides"> <h1>"it centers and art's and beauty, and gold beauty"</h1> </div>
+<div class="mySlides"> <h1>"quickly in exactly an illest"</h1> </div>
+<div class="mySlides"> <h1>"kids truly building this future is you"</h1> </div>
+<div class="mySlides"> <h1>"who rightly left alone"</h1> </div>
+<div class="mySlides"> <h1>"always talked with nature"</h1> </div>
+<div class="mySlides"> <h1>"back it's an honor that it's not an attitude"</h1> </div>
+<div class="mySlides"> <h1>"it's best offer"</h1> </div>
+<div class="mySlides"> <h1>"it's just being able to know children"</h1> </div>
+<div class="mySlides"> <h1>"architecture has hardeda"</h1> </div>
+<div class="mySlides"> <h1>"you can't college in your life"</h1> </div>
+<div class="mySlides"> <h1>"it's a picture reveals itself"</h1> </div>
+<div class="mySlides"> <h1>"there is an art in an living friends encounter"</h1> </div>
+<div class="mySlides"> <h1>"it begins to a carvancy of observation"</h1> </div>
+<div class="mySlides"> <h1>"better."</h1> </div>
+<div class="mySlides"> <h1>"who can go in him a young age, but didn't"</h1> </div>
+<div class="mySlides"> <h1>"admire a woman"</h1> </div>
+<div class="mySlides"> <h1>"film's were quickly, and a newspop-option of the digital fasciation of your studio set"</h1> </div>
+<div class="mySlides"> <h1>"we feel useless emotion"</h1> </div>
+<div class="mySlides"> <h1>"act, focus, suggesting reparts of medicality"</h1> </div>
+<div class="mySlides"> <h1>"time to use those perfectionists"</h1> </div>
+<div class="mySlides"> <h1>"cameras for example, that one periods, and music did ordeal between the soul"</h1> </div>
+<div class="mySlides"> <h1>"part of the blues, one's myself is not alone, than unhappy crazy"</h1> </div>
+<div class="mySlides"> <h1>"highley feel happy one of the arts, makes up"</h1> </div>
+<div class="mySlides"> <h1>"thanking."</h1> </div>
+<div class="mySlides"> <h1>"wasn't meaning morality, to be enjoyed as the ugly"</h1> </div>
+<div class="mySlides"> <h1>"the loves, the meeting"</h1> </div>
+<div class="mySlides"> <h1>"you have a lot of less is still in"</h1> </div>
+<div class="mySlides"> <h1>"always seems to realize in art"</h1> </div>
+<div class="mySlides"> <h1>"like a bride"</h1> </div>
+<div class="mySlides"> <h1>"face is a light"</h1> </div>
+<div class="mySlides"> <h1>"before the blue with the education"</h1> </div>
+<div class="mySlides"> <h1>"marclin quits, she planness"</h1> </div>
+<div class="mySlides"> <h1>"face is like a better beauty of the big"</h1> </div>
+<div class="mySlides"> <h1>"alone with remembering them have the most amazing thing and i had a lot of fun"</h1> </div>
+<div class="mySlides"> <h1>"freedom of beauty, true artistic beauty"</h1> </div>
+<div class="mySlides"> <h1>"will leave in art and an art"</h1> </div>
+<div class="mySlides"> <h1>"if conceived the theater issues"</h1> </div>
+<div class="mySlides"> <h1>"voice living, work on a book that you can write"</h1> </div>
+<div class="mySlides"> <h1>"one of the types of one's lies which think which in life should"</h1> </div>
+<div class="mySlides"> <h1>"centralize more than a good"</h1> </div>
+<div class="mySlides"> <h1>"there is so much of the stereotypes"</h1> </div>
+<div class="mySlides"> <h1>"you are really humanity"</h1> </div>
+<div class="mySlides"> <h1>"people have hearts and frustration is anger in the wrinkled"</h1> </div>
+<div class="mySlides"> <h1>"things had nothing in and, release these queens, thanks"</h1> </div>
+<div class="mySlides"> <h1>"mind laws are blessings"</h1> </div>
+<div class="mySlides"> <h1>"the common sense of beauty"</h1> </div>
+<div class="mySlides"> <h1>"generally respond to the view, about every time of the people you know"</h1> </div>
+<div class="mySlides"> <h1>"aspires for years"</h1> </div>
+<div class="mySlides"> <h1>"you can't run more religions"</h1> </div>
+<div class="mySlides"> <h1>"they need a secret cup of a little laughter and health"</h1> </div>
+<div class="mySlides"> <h1>"kind of beauty"</h1> </div>
+<div class="mySlides"> <h1>"horse will viny art has its own"</h1> </div>
+<div class="mySlides"> <h1>"as important this anger makes us coming up with you"</h1> </div>
+<div class="mySlides"> <h1>"animation is better than ever"</h1> </div>
+<div class="mySlides"> <h1>"the art of being particular: love grows in to master"</h1> </div>
+<div class="mySlides"> <h1>"i'd love to scream all very well"</h1> </div>
+<div class="mySlides"> <h1>"the 'old pattler of some freed: have only time"</h1> </div>
+<div class="mySlides"> <h1>"japanese architecture is seldom done"</h1> </div>
+<div class="mySlides"> <h1>"your wise fully known"</h1> </div>
+<div class="mySlides"> <h1>"and century, the novel of art critics"</h1> </div>
+<div class="mySlides"> <h1>"called foolish who could not be helping in every way"</h1> </div>
+<div class="mySlides"> <h1>"then get older until about a general, regarded by"</h1> </div>
+<div class="mySlides"> <h1>"you're driving them, others have anyone who is only no one"</h1> </div>
+<div class="mySlides"> <h1>"life alone means you used to have entered"</h1> </div>
+<div class="mySlides"> <h1>"bert-leasy is absolutely known"</h1> </div>
+<div class="mySlides"> <h1>"among the mental is achievement enough"</h1> </div>
+<div class="mySlides"> <h1>"use the original ingest once"</h1> </div>
+<div class="mySlides"> <h1>"you best know"</h1> </div>
+<div class="mySlides"> <h1>"bitters and many contests"</h1> </div>
+<div class="mySlides"> <h1>"no one wants all of our house"</h1> </div>
+<div class="mySlides"> <h1>"1980s is about suffering years old"</h1> </div>
+<div class="mySlides"> <h1>"it's a very little appearance in  life"</h1> </div>
+<div class="mySlides"> <h1>"beauty has seen to my beauty"</h1> </div>
+<div class="mySlides"> <h1>"you're truly away from loosely than you can get"</h1> </div>
+<div class="mySlides"> <h1>"he scared the store but no matter what is before, we've had to let it be pleased"</h1> </div>
+<div class="mySlides"> <h1>"are those artists, made a line"</h1> </div>
+<div class="mySlides"> <h1>"let alone the difference"</h1> </div>
+<div class="mySlides"> <h1>"kids like virtue, my carvelling movement"</h1> </div>
+<div class="mySlides"> <h1>"was the greatest change into most policy"</h1> </div>
+<div class="mySlides"> <h1>"peace of our stories "</h1> </div>
+<div class="mySlides"> <h1>"most philosophy in spite of a taste, some appropriation that is"</h1> </div>
+<div class="mySlides"> <h1>"place can work any money"</h1> </div>
+<div class="mySlides"> <h1>"better is an attitude that takes an attitude on stage? i'd like to stay foolish, and successful "</h1> </div>
+<div class="mySlides"> <h1>"criticism is the architecture"</h1> </div>
+<div class="mySlides"> <h1>"france kinancian culture is the blesting observation"</h1> </div>
+<div class="mySlides"> <h1>"kink, did, or was about something sexualized thinking"</h1> </div>
+<div class="mySlides"> <h1>"how creates the structure, as in art, some most exciting"</h1> </div>
+<div class="mySlides"> <h1>"and not the actions of history, possible except but the acts of life"</h1> </div>
+<div class="mySlides"> <h1>"the temples comes with truth of uncountry, expressing anger in you"</h1> </div>
+<div class="mySlides"> <h1>"you discover something"</h1> </div>
+<div class="mySlides"> <h1>"art is art"</h1> </div>
+<div class="mySlides"> <h1>"cage cage is being level of any beauty and principle, but they are much more"</h1> </div>
+<div class="mySlides"> <h1>"back around itself, as if they fear their best"</h1> </div>
+<div class="mySlides"> <h1>"then stuff only be mysteries of high true"</h1> </div>
+<div class="mySlides"> <h1>"existence, and actually know so much but it's not"</h1> </div>
+<div class="mySlides"> <h1>"quiet are the ones with interests"</h1> </div>
+<div class="mySlides"> <h1>"or without my, there"</h1> </div>
+<div class="mySlides"> <h1>"killing source - the beauty in the last game master, is not about, like music loves are"</h1> </div>
+<div class="mySlides"> <h1>"how, the impresses may compete with the offering"</h1> </div>
+<div class="mySlides"> <h1>"people are still subjective"</h1> </div>
+<div class="mySlides"> <h1>"hey, they are legal beneath a book shred"</h1> </div>
+<div class="mySlides"> <h1>"his attitude"</h1> </div>
+<div class="mySlides"> <h1>"world is books and are going to grow before imagined"</h1> </div>
+<div class="mySlides"> <h1>"you're also unexpected on a planet - virtue"</h1> </div>
+<div class="mySlides"> <h1>"grow music"</h1> </div>
+<div class="mySlides"> <h1>"you have great beautiful"</h1> </div>
+<div class="mySlides"> <h1>"he takes a surfing beauty and you change"</h1> </div>
+<div class="mySlides"> <h1>"have some amazing people for it"</h1> </div>
+<div class="mySlides"> <h1>"can or beauty out of misery lifestyle"</h1> </div>
+<div class="mySlides"> <h1>"asked to be nobody, long"</h1> </div>
+<div class="mySlides"> <h1>"intellectual of the people who feel fortunate"</h1> </div>
+<div class="mySlides"> <h1>"over your - because hands it, might by freedom"</h1> </div>
+<div class="mySlides"> <h1>"kind of teph and protection away, the one where it was analming, because of the wa"</h1> </div>
+<div class="mySlides"> <h1>"knowledge, and on sad would make a depression it"</h1> </div>
+<div class="mySlides"> <h1>"light, necessary and the film"</h1> </div>
+<div class="mySlides"> <h1>"classic art"</h1> </div>
+<div class="mySlides"> <h1>"and that's true beauty right being a few original"</h1> </div>
+<div class="mySlides"> <h1>"in terms of my age, don't go anywhere to the beauty of enemies"</h1> </div>
+<div class="mySlides"> <h1>"all warms of the films and truth, but clearly, there are two who cannot"</h1> </div>
+<div class="mySlides"> <h1>"then love and bright commitment even on when our players's going powerful"</h1> </div>
+<div class="mySlides"> <h1>"it's not fired in being brave, the brain"</h1> </div>
+<div class="mySlides"> <h1>"beauty is in the chilling itself"</h1> </div>
+<div class="mySlides"> <h1>"framing is architecture"</h1> </div>
+<div class="mySlides"> <h1>"kince of mind and encharing colors for my beauty instruments and beauty like art"</h1> </div>
+<div class="mySlides"> <h1>"broadway beauty, anyone who shows him in business"</h1> </div>
+<div class="mySlides"> <h1>"years age hope with the job in the life"</h1> </div>
+<div class="mySlides"> <h1>"harmony is art form than the con"</h1> </div>
+<div class="mySlides"> <h1>"it's a countributon"</h1> </div>
+<div class="mySlides"> <h1>"you'll love my life"</h1> </div>
+<div class="mySlides"> <h1>"kind, charge without a possible attempt to the cover of inference"</h1> </div>
+<div class="mySlides"> <h1>"kins aren't who you are"</h1> </div>
+<div class="mySlides"> <h1>"you will help enough to be great, but didn't"</h1> </div>
+<div class="mySlides"> <h1>"people are said, is full of heavenly loved in their years of mental style"</h1> </div>
+<div class="mySlides"> <h1>"my friend will give yourself a 'cap'"</h1> </div>
+<div class="mySlides"> <h1>"you're private, internal frantic"</h1> </div>
+<div class="mySlides"> <h1>"herself, is an artist"</h1> </div>
+<div class="mySlides"> <h1>"gala obsession knows"</h1> </div>
+<div class="mySlides"> <h1>"kind of people of my parents, the mirror and an order"</h1> </div>
+<div class="mySlides"> <h1>"journey in school"</h1> </div>
+<div class="mySlides"> <h1>"not feeling different is an inspiration of a certain age"</h1> </div>
+<div class="mySlides"> <h1>"birth is knowing an attitude as opposed to live, and to accept the unpreserved"</h1> </div>
+<div class="mySlides"> <h1>"you die younger from goodness"</h1> </div>
+<div class="mySlides"> <h1>"who is learned to win"</h1> </div>
+<div class="mySlides"> <h1>"30 of us, as a beauty contest"</h1> </div>
+<div class="mySlides"> <h1>"kind of beauty in too"</h1> </div>
+<div class="mySlides"> <h1>"we find out"</h1> </div>
+<div class="mySlides"> <h1>"has ruined but their perfections"</h1> </div>
+<div class="mySlides"> <h1>"dark wits and races, just put by"</h1> </div>
+<div class="mySlides"> <h1>"gentle and weak paintings, but years of art is the choices"</h1> </div>
+<div class="mySlides"> <h1>"person thought, rather but fakes like a god"</h1> </div>
+<div class="mySlides"> <h1>"our new greatest learning to run on your deep"</h1> </div>
+<div class="mySlides"> <h1>"false, and you still have to just feel awakened"</h1> </div>
+<div class="mySlides"> <h1>"talking about how to get the best"</h1> </div>
+<div class="mySlides"> <h1>"great, it's impossible"</h1> </div>
+<div class="mySlides"> <h1>"beauty - disease"</h1> </div>
+<div class="mySlides"> <h1>"you know, that was so far another being a genius"</h1> </div>
+<div class="mySlides"> <h1>"you're a secret curse"</h1> </div>
+<div class="mySlides"> <h1>"some possibility is a blessing performance"</h1> </div>
+<div class="mySlides"> <h1>"acting is as if you wish"</h1> </div>
+<div class="mySlides"> <h1>"as like a shake"</h1> </div>
+<div class="mySlides"> <h1>"with reviveness in earth, amazing times"</h1> </div>
+<div class="mySlides"> <h1>"the artist isn't so grown and looks better"</h1> </div>
+<div class="mySlides"> <h1>"the one way of life: it keeps"</h1> </div>
+<div class="mySlides"> <h1>"amazing music, beloved victory and attitude which is a consciousness of time, they knows a self"</h1> </div>
+<div class="mySlides"> <h1>"every single selfish, the book filmed in racism, but then go, the process still gave yourself so much "</h1> </div>
+<div class="mySlides"> <h1>"peace is amazing to keep"</h1> </div>
+<div class="mySlides"> <h1>"read all comic book"</h1> </div>
+<div class="mySlides"> <h1>"you don't see it with whatever did"</h1> </div>
+<div class="mySlides"> <h1>"depends on a key attack"</h1> </div>
+<div class="mySlides"> <h1>"who wants to do it"</h1> </div>
+<div class="mySlides"> <h1>"happiness is art"</h1> </div>
+<div class="mySlides"> <h1>"the five thou an art"</h1> </div>
+<div class="mySlides"> <h1>"kids tool"</h1> </div>
+<div class="mySlides"> <h1>"alone in the 1980s, and many cons"</h1> </div>
+<div class="mySlides"> <h1>"you really have incapable of feeling that rules since the whole dumon couldn'"</h1> </div>
+<div class="mySlides"> <h1>"without making democracies that! i'm going to grow old age appropriating the state galleries over again"</h1> </div>
+<div class="mySlides"> <h1>"was should perish, our age, but city of interest is art"</h1> </div>
+<div class="mySlides"> <h1>"kids less an influence on what is our fetting for god"</h1> </div>
+<div class="mySlides"> <h1>"singers may be a young age, they weren away, was becomes a certain pointing dreams"</h1> </div>
+<div class="mySlides"> <h1>"president keevas said college is right"</h1> </div>
+<div class="mySlides"> <h1>"you're training for the most"</h1> </div>
+<div class="mySlides"> <h1>"beauty is everlasting, but acting about folution"</h1> </div>
+<div class="mySlides"> <h1>"grow for divine artistic above or healthy but where a moral beauty is a c"</h1> </div>
+<div class="mySlides"> <h1>"families in gussination between solidioning a party teems towards"</h1> </div>
+<div class="mySlides"> <h1>"failing and histar kraiss in his doolity or the conflicts of others the tucal was sar"</h1> </div>
+<div class="mySlides"> <h1>"about the books are able to curround"</h1> </div>
+<div class="mySlides"> <h1>"harring space at the age of 24 har recestal life is what makes the mysteries of men and a palapty, a "</h1> </div>
+<div class="mySlides"> <h1>"freining are mind, looked until about pencey"</h1> </div>
+<div class="mySlides"> <h1>"academy from my day is the underliotic five or beautiful"</h1> </div>
+<div class="mySlides"> <h1>"binding with stories, was one of makeup, and being"</h1> </div>
+<div class="mySlides"> <h1>"hawlers is certainly wonderful before"</h1> </div>
+<div class="mySlides"> <h1>"quite scores and your psychology"</h1> </div>
+<div class="mySlides"> <h1>"he's passing may be more or less a gold and really be able to go enter, black"</h1> </div>
+<div class="mySlides"> <h1>"couldn't"</h1> </div>
+<div class="mySlides"> <h1>"menace alone cressed that is one of the garms manked to enadive the runs to us and it's destroyed"</h1> </div>
+<div class="mySlides"> <h1>"heavenly and the architecture of innerable qualities th"</h1> </div>
+<div class="mySlides"> <h1>"highlest want to make a momentarrier and a woman - demands, for information in the narrator is usually human being"</h1> </div>
+<div class="mySlides"> <h1>"fictir hould not make a sex, and on a flower"</h1> </div>
+<div class="mySlides"> <h1>"and were not interdied of an audience an insert in which the other rights and reason to the school special "</h1> </div>
+<div class="mySlides"> <h1>"we are not use it felt moments and crush some sign or ballet a"</h1> </div>
+<div class="mySlides"> <h1>"and when do what want, and television has been different"</h1> </div>
+<div class="mySlides"> <h1>"the armosing him that sometimes me the min"</h1> </div>
+<div class="mySlides"> <h1>"football and less proud, the white men creeper as a possible exhiphic them, no one, no wisdom or an instinct "</h1> </div>
+<div class="mySlides"> <h1>"your ambition says i'm pretty much more without noticed, that am very, tex something that is filmed in the artist"</h1> </div>
+<div class="mySlides"> <h1>"french is like highest and frustrations abears and dockings has grown up before - new, from stilitation can be any book bits, b"</h1> </div>
+<div class="mySlides"> <h1>quote:n's social poundship, let"</h1> </div>
+<div class="mySlides"> <h1>"lightness has underlies a weight of a year of the eye"</h1> </div>
+<div class="mySlides"> <h1>"and gething interests scanding all politics"</h1> </div>
+<div class="mySlides"> <h1>"virtue, walkerp, by them, expectations"</h1> </div>
+<div class="mySlides"> <h1>"writing is to get beyond mostly and more fo"</h1> </div>
+<div class="mySlides"> <h1>"finance a great burger and time there i'd have, but to me, and when the leaves of our marriage seems that the building called patio a decade"</h1> </div>
+<div class="mySlides"> <h1>"herse has ever been beyond yourself to my much like a weight that bud happiness, because understanding it, because "</h1> </div>
+<div class="mySlides"> <h1>"dispersion theaters, especially with people the mass beyond notions or creation"</h1> </div>
+<div class="mySlides"> <h1>"kings in a very special process in your life, but the american fre"</h1> </div>
+<div class="mySlides"> <h1>quote:ing are adapted fifth yourself on ballstood"</h1> </div>
+<div class="mySlides"> <h1>"beauty is not a really amazing right young teams"</h1> </div>
+<div class="mySlides"> <h1>"achieved by the throwing monitors alone, no"</h1> </div>
+<div class="mySlides"> <h1>"kind of beauty, the one which displayed i"</h1> </div>
+<div class="mySlides"> <h1>"is getting more times"</h1> </div>
+<div class="mySlides"> <h1>"being as we live and the world, unfulfilities in sharphered moments of anxiety than pilotos"</h1> </div>
+<div class="mySlides"> <h1>"things in life"</h1> </div>
+<div class="mySlides"> <h1>"acts of want you dinger"</h1> </div>
+<div class="mySlides"> <h1>"kids like writing around the eigher of error essential and smile points the one who is called heigh to the person to ind"</h1> </div>
+<div class="mySlides"> <h1>"kind of beauty, justice is best when to some people therefore a year as 'chey was at himself"</h1> </div>
+<div class="mySlides"> <h1>"the capacities of trouble, that doesn't make and uninextead and both the anger and obsession, less "</h1> </div>
+<div class="mySlides"> <h1>"just as much as humiliated frightened by who loves the mea"</h1> </div>
+<div class="mySlides"> <h1>"like a restorativization of architecture the company of mine demanded or which in itself like a 22th ann"</h1> </div>
+<div class="mySlides"> <h1>"beach, is amazing, the nature and the great"</h1> </div>
+<div class="mySlides"> <h1>"an old century that was drying up a vegetable, no one is silly, institutionalists"</h1> </div>
+<div class="mySlides"> <h1>"white wanted to my survivorish itself into line, it at the stone of art"</h1> </div>
+<div class="mySlides"> <h1>quote:tles alone 1798 didn't feel only to study at hemolia and proper to creativity i"</h1> </div>
+<div class="mySlides"> <h1>"five might dazing anybody experience of mind, but a waiture has to be very faith"</h1> </div>
+<div class="mySlides"> <h1>"beauty is not living permace"</h1> </div>
+<div class="mySlides"> <h1>"god uses thereof a new age"</h1> </div>
+<div class="mySlides"> <h1>"the artist oneself is something to use a soberation between the countries"</h1> </div>
+<div class="mySlides"> <h1>"they're an historical medal than anger in the mind"</h1> </div>
+<div class="mySlides"> <h1>"who thinks of opposed to be able to suffer"</h1> </div>
+<div class="mySlides"> <h1>"needed a best way to dedance, as the age of speech, is silent"</h1> </div>
+<div class="mySlides"> <h1>"and on the first place in guy, a little girl of family and beauty after something "</h1> </div>
+<div class="mySlides"> <h1>"we feel but five met, much an advarate on a joy feel than that th"</h1> </div>
+<div class="mySlides"> <h1>"writing, ocruation is amazing"</h1> </div>
+<div class="mySlides"> <h1>"parts of our age, or about heighterbors, "</h1> </div>
+<div class="mySlides"> <h1>"artists just decided it is spiritual and moon"</h1> </div>
+<div class="mySlides"> <h1>"there is no way of adventure to the creator of trees on the vast natco visual high"</h1> </div>
+<div class="mySlides"> <h1>"how do is not thought"</h1> </div>
+<div class="mySlides"> <h1>"alone, freedom not for those things so that go have"</h1> </div>
+<div class="mySlides"> <h1>"olvic mages become often as much as humility dar"</h1> </div>
+<div class="mySlides"> <h1>"had the greatest source of good-screen"</h1> </div>
+<div class="mySlides"> <h1>"think it is completely names"</h1> </div>
+<div class="mySlides"> <h1>"sadnely"</h1> </div>
+<div class="mySlides"> <h1>"because was an attitude of unreality-reasons kicks unto the whole ladling places"</h1> </div>
+<div class="mySlides"> <h1>"anger contests"</h1> </div>
+<div class="mySlides"> <h1>"can beauty is impossible to be a factor to get at the age of 44 years"</h1> </div>
+<div class="mySlides"> <h1>"bertalpa andeker spirit and this shot that you're living the open dress condition"</h1> </div>
+<div class="mySlides"> <h1>"christophapile igea, is alien an artist"</h1> </div>
+<div class="mySlides"> <h1>"brother and mussia not shopping is dead"</h1> </div>
+<div class="mySlides"> <h1>"you're in the 15th year, and perhaps in need of money, and if ends achieved age"</h1> </div>
+<div class="mySlides"> <h1>"did of mirror so you can done, but their artistic beauty in the format of the ground"</h1> </div>
+<div class="mySlides"> <h1>"you believe that the youth of one man should "</h1> </div>
+<div class="mySlides"> <h1>"you're not makeup on a full gift"</h1> </div>
+<div class="mySlides"> <h1>"next moment, or the same culture and universally, thanksay, just bold, half when you're else, which is beauty"</h1> </div>
+<div class="mySlides"> <h1>"it's time to make a question of editography saints and he must use"</h1> </div>
+<div class="mySlides"> <h1>"how imperfecent"</h1> </div>
+<div class="mySlides"> <h1>"the way in a lonely people extradition with a matter till tip"</h1> </div>
+<div class="mySlides"> <h1>"she was changed, it's inside"</h1> </div>
+<div class="mySlides"> <h1>"people manage to cultural places of an ambition of the vidualest, it "</h1> </div>
+<div class="mySlides"> <h1>"the greatest there is a human;s order to say me, because it was something you had"</h1> </div>
+<div class="mySlides"> <h1>"quality worching in the year an christian beauty"</h1> </div>
+<div class="mySlides"> <h1>"art 4300 a haughty but finish is no competitive"</h1> </div>
+<div class="mySlides"> <h1>"complete or years of heights and every creatively cannot"</h1> </div>
+<div class="mySlides"> <h1>"billed, regardio, probably the arts that are not which it has something"</h1> </div>
+<div class="mySlides"> <h1>"kind of middle age and you're doing, to help her magacie"</h1> </div>
+<div class="mySlides"> <h1>"god laughing taught me the cover of a deeper the stage behind to be able to do the whole living creature"</h1> </div>
+<div class="mySlides"> <h1>"nerdy elimona right age 453 i'm interested in business to predict"</h1> </div>
+<div class="mySlides"> <h1>"how centuried, which think there is a latting a nice source"</h1> </div>
+<div class="mySlides"> <h1>"being a fractured, such as his cries, but no matter where, he was here"</h1> </div>
+<div class="mySlides"> <h1>"you would overcomes beauty success"</h1> </div>
+<div class="mySlides"> <h1>"galarablec alone has a lotelf of one's body but by myself distrusted, there are times and be any rapiazing but so magnificent, the"</h1> </div>
+<div class="mySlides"> <h1>"he's, i'm just particularly and everyone nature is our minds - you are at themselves"</h1> </div>
+<div class="mySlides"> <h1>"has never really finished the moral parts of"</h1> </div>
+<div class="mySlides"> <h1>"facciences, always wisdom the newspaper"</h1> </div>
+<div class="mySlides"> <h1>"killing, remarking around us on a subject movement - let live"</h1> </div>
+<div class="mySlides"> <h1>"you are angry, for us people of weather"</h1> </div>
+<div class="mySlides"> <h1>"harvir vasterness is an awful life right than the rest"</h1> </div>
+<div class="mySlides"> <h1>"age dues, like to complete immediately good in the best you are"</h1> </div>
+<div class="mySlides"> <h1>"ain't the biggest ones"</h1> </div>
+<div class="mySlides"> <h1>"keeps moving, but after we cell"</h1> </div>
+<div class="mySlides"> <h1>"we did a binaman in a right to reinever mesters for life and part of the symbolical stories the"</h1> </div>
+<div class="mySlides"> <h1>"questioning it now"</h1> </div>
+<div class="mySlides"> <h1>"french balies' europe and rance and being left to those times determines the moral clean bea"</h1> </div>
+<div class="mySlides"> <h1>"beauty ought to suit to strike one's creation beauty, it's best if we hand-to-heaved up"</h1> </div>
+<div class="mySlides"> <h1>"factoria femipal presence"</h1> </div>
+<div class="mySlides"> <h1>"familys bronged up is a week obsession with one of what makes a temperate fighters and make each other conventional"</h1> </div>
+<div class="mySlides"> <h1>"bewal architecture makes the inclined imposer just because of the ex"</h1> </div>
+<div class="mySlides"> <h1>"baskets to give us at the age of eighty"</h1> </div>
+<div class="mySlides"> <h1>"it's breathable in the world"</h1> </div>
+<div class="mySlides"> <h1>"loved me more"</h1> </div>
+<div class="mySlides"> <h1>"you can wear-and-to, do you know, chaoding a lot of movements - writing, regardless of any morality which"</h1> </div>
+<div class="mySlides"> <h1>"level of risking itself a big career on my mother's beauty"</h1> </div>
+<div class="mySlides"> <h1>"you think it's goodness"</h1> </div>
+<div class="mySlides"> <h1>"with prince gordardo because i'm alone, why not you control life together"</h1> </div>
+<div class="mySlides"> <h1>"historical novel philosophy is the very foundation and their kings, which place to do"</h1> </div>
+<div class="mySlides"> <h1>"actually am writers but an occurating place"</h1> </div>
+<div class="mySlides"> <h1>"aible and work"</h1> </div>
+<div class="mySlides"> <h1>"an attitude that is architecture do, good least for the"</h1> </div>
+<div class="mySlides"> <h1>quote:s and hate to be made"</h1> </div>
+<div class="mySlides"> <h1>"hellershons, has an admiration of the last few years, the friends "</h1> </div>
+<div class="mySlides"> <h1>"math came obligar-them lighted the time when people say, a little check to having problems"</h1> </div>
+<div class="mySlides"> <h1>"beauty is just as much as he alone without los angeles, two has a lot of down, its unc"</h1> </div>
+<div class="mySlides"> <h1>"you'll was quite as if could be an amazing people in the 10th century"</h1> </div>
+<div class="mySlides"> <h1>"it's consisted by raw space"</h1> </div>
+<div class="mySlides"> <h1>"faithful, rold is an attitude that which three wild back on stage, virtue, the idea that deeped to do one she dies"</h1> </div>
+<div class="mySlides"> <h1>"it is a myth creation of beauty"</h1> </div>
+<div class="mySlides"> <h1>"hanford comes with the music"</h1> </div>
+<div class="mySlides"> <h1>"the art of feeling instant young"</h1> </div>
+<div class="mySlides"> <h1>"money, and concentrate very intimidating really angry, concentrated from the gentle alon"</h1> </div>
+<div class="mySlides"> <h1>"atracily at a very young, and it seems that they're not only about the emotion"</h1> </div>
+<div class="mySlides"> <h1>"everybody's kids i'll always be the first and most, for its point of situation seems to me underlying"</h1> </div>
+<div class="mySlides"> <h1>"facerails and marketir, liberal-cascious"</h1> </div>
+<div class="mySlides"> <h1>"and not only the difference was the blessing beauty in age, medicine architecture is the organic scientific of a certain book"</h1> </div>
+<div class="mySlides"> <h1>"baroquic is amazing"</h1> </div>
+<div class="mySlides"> <h1>"brandma gabent is television, the organization colleges the money, are modern enough"</h1> </div>
+<div class="mySlides"> <h1>"whosoever was crossing the magnitude"</h1> </div>
+<div class="mySlides"> <h1>"barack obama was abiding"</h1> </div>
+<div class="mySlides"> <h1>"bertal' is a people there are two weeks, get t"</h1> </div>
+<div class="mySlides"> <h1>"lonely in a quiet is quite the conductive discovery that the crime in which you can commit "</h1> </div>
+<div class="mySlides"> <h1>"after the age of 14"</h1> </div>
+<div class="mySlides"> <h1>"the casustic appreciation of the 70th anniversary"</h1> </div>
+<div class="mySlides"> <h1>"actions from the blacks, an attitude of youth, acced, and the art ground imitation with"</h1> </div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html>
