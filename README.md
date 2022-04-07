@@ -1,11 +1,11 @@
 # RNN char based text generated "motivational quotes"!
-### Using tensorflow: https://www.tensorflow.org/text/tutorials/text_generation
+Using tensorflow: https://www.tensorflow.org/text/tutorials/text_generation
 
-# ai_quotes
+## ai_quotes
 
-Quotes page: https://qiquotes.azurewebsites.net/
+### Quotes page: https://qiquotes.azurewebsites.net/
 
-Run on Google Colab: https://drive.google.com/drive/folders/1_ae1Dsca_8Wep8kEAVURXkPTyLQ_XMRE?usp=sharing
+Run on Google Colab to play around: https://drive.google.com/drive/folders/1_ae1Dsca_8Wep8kEAVURXkPTyLQ_XMRE?usp=sharing
 
 
 ### Step 1:
