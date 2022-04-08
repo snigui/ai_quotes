@@ -14,12 +14,9 @@ Run on Google Colab to play around: https://drive.google.com/drive/folders/1_ae1
 
 ### Step 2:
 
-> Click the files on the left bar and verify you see index.html
+> Click the files on the left bar and verify you see file0.csv
 
 <img width="893" alt="image" src="https://user-images.githubusercontent.com/40993241/161903367-1599a93c-cb3d-4353-8533-ac7f22df876d.png">
 
 ### Step 3:
-> Run first cell and navigate to link
-
-<img width="601" alt="image" src="https://user-images.githubusercontent.com/40993241/161903444-1e71dda7-c066-4760-a10f-2e0fd771ced0.png">
-
+> Follow cell run instructions and prompts!
