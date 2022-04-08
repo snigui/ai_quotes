@@ -10,13 +10,16 @@ Run on Google Colab to play around: https://drive.google.com/drive/folders/1_ae1
 
 ### Step 1:
 
-<img width="393" alt="image" src="https://user-images.githubusercontent.com/40993241/161903198-6721e285-63a2-4f45-a696-f6c23222b118.png">
+> Open the files' folder on Drive
+<img width="628" alt="image" src="https://user-images.githubusercontent.com/40993241/162339680-3896f9fb-2405-4a3c-8e37-436b3fba61d4.png">
+
 
 ### Step 2:
 
-> Click the files on the left bar and verify you see file0.csv
+> Open the .ipynb file. Click the files on the left bar and upload file0.csv
+<img width="336" alt="image" src="https://user-images.githubusercontent.com/40993241/162339751-eb461da5-5726-44bc-a339-11f35a5d8489.png">
+<img width="328" alt="image" src="https://user-images.githubusercontent.com/40993241/162339773-49f57839-f7a7-417b-90bc-6e6f2b0c0bce.png">
 
-<img width="893" alt="image" src="https://user-images.githubusercontent.com/40993241/161903367-1599a93c-cb3d-4353-8533-ac7f22df876d.png">
 
 ### Step 3:
 > Follow cell run instructions and prompts!
